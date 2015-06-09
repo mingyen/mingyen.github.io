@@ -1,1 +1,30 @@
-Hello World
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+
+<img src="preview.png">
+
+<script type="text/javascript">
+var redirect = function(location) {
+  if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+    var iframe = document.createElement('iframe');
+    iframe.setAttribute('src', location);
+    iframe.setAttribute('width', '1px');
+    iframe.setAttribute('height', '1px');
+    iframe.setAttribute('position', 'absolute');
+    iframe.setAttribute('top', '0');
+    iframe.setAttribute('left', '0');
+    document.documentElement.appendChild(iframe);
+    iframe.parentNode.removeChild(iframe);
+    iframe = null;
+  } else if (/(Android)/i.test(navigator.userAgent)) {
+    window.location = location;
+  }
+};
+redirect("tumblr://x-callback-url/dashboard");
+</script>
+  
+</body>
+</html>
