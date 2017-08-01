@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "mingyen.idv.myinstantapp",
+    "sha256_cert_fingerprints":
+    ["22:9B:33:9C:A0:B1:3B:70:AF:35:C2:BD:63:01:A0:77:1C:24:95:CE:97:D6:CC:6A:3B:99:B6:97:A8:68:B8:92"]
+  }
+}]
